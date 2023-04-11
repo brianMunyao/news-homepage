@@ -11,7 +11,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 120px 1fr;
-	padding: 0 120px;
+	padding: 0 135px;
 	background: hsl(36, 100%, 99%);
 }
 
@@ -23,17 +23,20 @@ nav {
 
 nav > img {
 	margin: auto auto auto 0;
-	height: 40px;
+	height: 36px;
 }
 
 nav div {
 	display: grid;
 	grid-template-rows: 1fr;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(5, auto);
 	margin: auto 0 auto auto;
-	gap: 5px;
+	gap: 30px;
 	font-size: 14px;
 	color: hsl(236, 13%, 42%);
+}
+h1 {
+	font-weight: 800;
 }
 
 main {
@@ -56,9 +59,9 @@ main > img {
 	grid-area: page-info;
 }
 .page-info p {
-	font-size: 14px;
+	font-size: 13px;
 	color: hsl(236, 13%, 42%);
-	line-height: 19px;
+	line-height: 20px;
 	margin-bottom: 20px;
 }
 .page-info button {
@@ -68,18 +71,19 @@ main > img {
 	text-transform: uppercase;
 	padding: 10px 20px;
 	letter-spacing: 2px;
+	font-size: 13px;
 }
 article {
 	grid-area: article;
 	background: hsl(240, 100%, 5%);
 	color: #fff;
-	padding: 30px;
+	padding: 30px 20px;
 }
 .new {
 	color: hsl(35, 77%, 62%);
 	font-weight: 700;
-	font-size: 35px;
-	margin-bottom: 15px;
+	font-size: 32px;
+	margin-bottom: 25px;
 }
 .article-title {
 	font-weight: 700;
@@ -87,11 +91,11 @@ article {
 }
 .article-info {
 	opacity: 0.6;
-	font-size: 15px;
+	font-size: 13.5px;
 	line-height: 22px;
 }
 article hr {
-	margin: 15px 0;
+	margin: 22px 0;
 	opacity: 0.5;
 }
 
@@ -106,7 +110,7 @@ article hr {
 .story {
 	display: grid;
 	grid-template-rows: 1fr;
-	grid-template-columns: 90px 1fr;
+	grid-template-columns: 85px 1fr;
 }
 .story img {
 	width: 100%;
@@ -124,12 +128,13 @@ article hr {
 }
 
 .story-title {
-	font-weight: 700;
-	margin-bottom: 5px;
+	font-weight: 800;
+	margin: 6px 0;
+	font-size: 15px;
 }
 
 .story-info {
-	font-size: 15px;
+	font-size: 13.5px;
 	color: hsl(236, 13%, 42%);
-	line-height: 23px;
+	line-height: 20px;
 }
